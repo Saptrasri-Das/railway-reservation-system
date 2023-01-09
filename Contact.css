@@ -1,0 +1,9 @@
+body{
+    background:url("back.png");}
+
+h1{
+text-align:center;}
+.logo1{
+	position:absolute;
+	top:10px;
+	left:1300px;}

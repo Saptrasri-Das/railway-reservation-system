@@ -1,0 +1,250 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home Page</title>
+    
+</head>
+<body>
+  <div class="logo1">
+  <img src="1200px-IRCTC_Logo.svg.png" width="50" height="50" >
+</div>
+
+<div class="logo2">
+  <img src="6a724b9501764fd83a4abcd37b58144d.png" width="50" height="50" >
+</div>
+
+  <div class="k">
+    <a href="#" style="text-decoration: none; font-size: 20px;">
+      <label for="Home" style="color: black;">Home</label></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#" style="text-decoration: none; font-size: 20px;">
+      <label for="Register" style="color: black;">Register</label></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#" style="text-decoration: none; font-size: 20px;"
+     onclick="document.getElementById('id01').style.display='block'">
+    <label for="Login" style="color: black;">Login</label></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#" style="text-decoration: none; font-size: 20px;">
+      <label for="Holidays" style="color: black;">Holidays</label></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="./meal.html" style="text-decoration: none; font-size: 20px;" target="blank">
+      <label for="Meals" style="color: black;">Meals</label></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="./serviceatsation.html" style="text-decoration: none; font-size: 20px;" target="blank">
+      <label for="Service at station" style="color: black;">Service at station</label></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="./Contact.html" style="text-decoration: none; font-size: 20px;" target="blank">
+      <label for="Contact Us" style="color: black;">Contact Us</label></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="railway-4386732_1280.jpg" width="1511" height="800">
+    
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="railway-station-1363771_1920.jpg" width="1511" height="800">
+   
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="rails-4676007_1280.jpg" width="1511" height="800">
+    
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 60000000); // Change image every 10 minute
+  }
+  </script>
+
+
+
+  <div class="table">
+    <form action="./log" method="post" >
+        <table border="0" cellpadding="3" cellspacing="23" style="width: 575px;">
+          <tr><td>
+            <div id="lable">
+            <label for="PNR Status"><font size="3" style="color: white; background-color:#082b71; size: 50%; position: absolute; top: 15px; left: 70px;" >PNR STATUS</font></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="PNR Status"><font size="3" style="color: white; background-color:#082b71; position: absolute; top: 15px; left: 370px;">CHARTS/VACANCY</font></label></div>
+          </td></tr>
+            <tr><td><center><font size="6" style="color: #082b71; position: absolute; top: 50px; left: 200px;">Book Ticket</font></center></td></tr>
+            <tr><td><font size="3" style="color: #082b71; position: absolute; top: 100px; left: 40px;">From:</font><br><input type="text" name="location" size="35" style="color: #082b71; position: absolute; top: 120px; left: 40px;" required></select>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="Date" style="color: #082b71; position: absolute; top: 120px; left: 360px;" required></td></tr>
+            <tr><td><font size="3" style="color: #082b71; position: absolute; top: 170px; left: 40px;">To:</font><br><input type="TEXT" name="To"  size="35" style="color: #082b71; position: absolute; top: 190px; left: 40px;" required>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="Genral" id="type" style="color: #082b71; position: absolute; top: 190px; left: 360px;">
+                <option value="All Classes">All Classes</option>
+                <option value="Anubhuti Class(EA)">Anubhuti Class(EA)</option>
+                <option value="AC First Class(1A)">AC First Class(1A)</option>
+                <option value="Exec. Chair Car(EC)">Exec. Chair Car(EC)</option>
+                <option value="AC 2 Tier(2A)">AC 2 Tier(2A)</option>
+                <option value="First Class(FC)">First Class(FC)</option>
+                <option value="AC 3 Tier(3A)">AC 3 Tier(3A)</option>
+                <option value="AC 3 Economy">AC 3 Economy(3E)</option>
+                <option value="AC Chair car(CC)">AC Chair car(CC)</option>
+                <option value="Sleeper(SL)">Sleeper(SL)</option></td></tr>
+
+            <tr><td><select name="Genral" id="type"  style="color: #082b71; position: absolute; top: 246px; left: 40px;"> 
+              <option value="GENERAL">GENERAL</option>
+              <option value="LADIES">LADIES</option>
+              <option value="LOWER BERTH/SR.CITIZEN">LOWER BERTH/SR.CITIZEN</option>
+              <option value="DIVIYANG">DIVIYANG</option>
+              <option value="TATKAL">TATKAL</option>
+              <option value="PREMIUM TATKAL">PREMIUM TATKAL</option></td></tr>
+              <tr><td><input type="checkbox" id="concessionBooking" name="concessionBooking" value="concessionBooking" style="color: #082b71;  position: absolute; top: 300px; left: 40px;">
+              <label for="concessionBooking" style="color: #082b71;  position: absolute; top: 300px; left: 60px;">Divyaang Concession</label>
+              <input type="checkbox" id="dateSpecific" name="dateSpecific" value="dateSpecific" style="color: #082b71;  position: absolute; top: 300px; left: 220px;">
+              <label for="dateSpecific" style="color: #082b71; position: absolute; top: 300px; left: 240px;">Flexible With Date</label>
+              <input type="checkbox" id="name="availableBerth" name="availableBerth" value="availableBerth" style="color: #082b71;  position: absolute; top: 300px; left: 385px;">
+              <label for="availableBerth" style="color: #082b71;  position: absolute; top: 300px; left: 405px;">Train with Available Berth </label></td></tr>
+            <tr><td><button class="button" style=" position: absolute; top: 340px; left: 40px;">Search</button></td></tr>  
+            </table>
+    </form></div>
+
+    <div class="tab">
+      <form action="./log" method="post">
+          <table border="0" cellpadding="3" cellspacing="26" style="width:575px ">
+            <tr><td>
+            </td></tr>
+              <tr><td><font size="3" style="color: #082b71; position: absolute; top: 10px; left: 170px;" >Covid 19 Health Advisory on Arrival.</font></td></tr>
+              <tr><td><p  style="color: black; top: 40px; left: 10px; font-size: 15px;">1. All passengers are hereby informed that 
+                downlaoding of Aarogya Setu App on their mobile phone, that they are carring along, is advisable.
+              </p><br>
+              <p style="color: black; top: 90px; left: 10px; font-size: 15px;">2. All Passengers note that on arrival at their
+                 destination, the traveling passengers will have to adhere to such health protocols as are prescribed by the 
+                 destination State/UT. For other states, State Govt websites may be visited to the ascertain the same.</p><br>
+                 <p style="color: black; top: 150px; left: 10px; font-size: 15px;">3. Catering Service is not available and catering charges 
+                  not included in the fare.</p><br></td></tr>
+                  <p style="color: black; top: 180px; left: 10px; font-size: 15px;">4. No blanket and linen shall be provided in the 
+                    train.</p><br></td></tr>
+              </table>
+      </form></div>
+
+    <div class="detail">
+      <p style="border-style:solid; border-width:thin; border-color:black; background-color: whitesmoke">
+        <img src="126893-oltgfwpczd-1567744532.jpg" width="270" height="200"  class="logo"><br><br>
+        <i><font size="4" style="color: black">Maharaja"s Express</font></i><br><br>
+      <i><font size="2" style="color: black">Redefining Royalty, Luxury and Comfort, Maharaja’s express takes you on a sojourn to the era of bygone 
+        stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an 
+        “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.</font> </i></p>
+    </div> 
+
+    <div class="de">
+      <p style="border-style:solid; border-width:thin; border-color:black; background-color: whitesmoke ">
+        <img src="798125-norwegian-getaway.jpg" width="270" height="200"  class="logo"><br><br>
+        <i><font size="4" style="color: black">International Packages</font></i><br><br>
+      <i><font size="2" style="color: black">Best deals in International Holiday packages, handpicked by IRCTC, for Thailand,
+         Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. 
+         The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance 
+         to give you a hassle-free and memorable experience. IRCTC Tourism always Offers Cheap Online Package for booking</font> </i></p>
+    </div> 
+
+    <div class="det">
+      <p style="border-style:solid; border-width:thin; border-color:black; background-color: whitesmoke ">
+        <img src="images.jfif" width="270" height="200"  class="logo"><br><br>
+        <i><font size="4" style="color: black">Domestic Air Packages</font></i><br><br>
+      <i><font size="2" style="color: black">Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi
+         or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh,
+          Wonders of Himalayas, Serene lakes or Picturesque Islands, IRCTC has it all. Discover India through IRCTC! IRCTC Tourism 
+          always Offers Cheap Online Package for booking</font> </i></p>
+    </div> 
+
+    <div class="deta">
+      <p style="border-style:solid; border-width:thin; border-color:black; background-color: whitesmoke ">
+        <img src="thumbimg.jfif" width="270" height="200"  class="logo"><br><br>
+        <i><font size="4" style="color: black">Rail Tour packages</font></i><br><br>
+      <i><font size="2" style="color: black">IRCTC offers Exclusive Rail tour packages with confirmed train tickets, 
+        sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours 
+        of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations 
+        are also available. IRCTC Tourism always Offers Cheap Online Package for booking</font> </i></p>
+    </div> 
+
+   <h1 style="color: white; top: 300px; left: 950px; ">INDIAN RAILWAYS</h1>
+
+   <h1 style="color: white; top: 360px; left: 1000px; font-size: 20px;">Safety | Security| Punctuality |</h1>
+   <h3 style="color: white; top: 900px; left: 950px;">Safety | Security| Punctuality |</h3>
+
+   <h3 class="social" style="color:white;border-style:solid;border-width:0px;"><b>Get Connected with us on social networks
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+    <a href="#" class="fa fa-telegram"></a></b></h3>
+
+    
+
+          <div class="ta">
+            <form action="./log" method="post" >
+                <table border="0" cellpadding="3" cellspacing="30" style="width:1482px ">
+                  <tr><td>
+                  </td></tr>
+                    <tr><td><p  style="color:white; top: 0px; left: 10px; font-size: 15px;">Indian Railway Catering 
+                      and Tourism Corporation (IRCTC) is a subsidiary of Indian Railways that provides ticketing, catering, and tourism 
+                      services to the Indian Railways. It was initially wholly owned by the Government of India and operated under the 
+                      administrative control of the Indian Ministry of Railways, but has been listed on the National Stock Exchange since 2019, 
+                      with the Government continuing to hold majority ownership <br><br>
+                      The IRCTC was established on 27 September 1999, as a public sector undertaking completely owned by the Government of India 
+                      through the Indian Railways. It is the only entity that is authorised to provide certain services to the Indian Railways, 
+                      including online ticketing, catering, and selling drinking water on trains and at railway stations. In May 2008, it was classed 
+                      as a Miniratna public corporation, which allowed it a certain degree of financial autonomy.[3] <br><br>
+            
+                      The IRCTC was listed on the National Stock Exchange in 2019, following which the Government of
+                       India's holding was reduced to 87%, with the remaining shares being publicly traded.[4][5] In December 2020, 
+                   </td></tr>
+                    </table>
+            </form></div>
+
+            <div class = "payment">
+              <i class="fa fa-cc-amex" style="font-size:40px; position: absolute; left: 500px;"></i>
+              <i class="fa fa-cc-visa" style="font-size:40px; position: absolute; left: 560px;"></i>
+              <i class="fa fa-credit-card" style="font-size:40px; position: absolute; left: 620px;"></i>
+              <i class="fa fa-google-wallet" style="font-size:40px; position: absolute; left: 670px;"></i>
+              <i class="fa fa-paypal" style="font-size:40px; position: absolute; left: 720px;"></i>
+              <i class="fa fa-cc-mastercard" style="font-size:40px; position: absolute; left: 760px;"></i>
+              <i class="fa fa-cc-diners-club" style="font-size:40px; position: absolute; left: 820px;"></i>
+              <h3 style="font-size:12px; position: absolute; left: 1120px; top: 27  px;"> Copyright Â© 2021 - www.indrailsapt.co.in. All Rights Reserved<br>
+                Designed and Hosted by CRIS <br>
+                Compatible Browsers</h3>
+            </div>
+
+    <div class="jjj"><h1 style="color: black;">HOLIDAYS</h1></div>
+   
+  <body>    
+</html>

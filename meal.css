@@ -1,0 +1,52 @@
+body{
+    background: url("back.png");}
+h1{
+ color:white;
+ background-color:#0066cc;
+ border-style:solid;
+ border-color:black;
+ border-width:10px;
+ text-align:center;}
+.center{
+ display: block;
+ border-style:solid;
+ border-width:10px;
+ margin-left: auto;
+ margin-right: auto;
+ }
+ .logo{
+  border-style: solid;
+  border-width:10px;
+  border-color: black;}
+.food{
+ border-style:solid;
+ border-width:10px;}
+h2{
+ text-indent:250px;
+ line-height:50px;
+ color:#000066}
+#tabhed,#tabhed1,#tabhed2,#tabhed3,#tabhed4{
+  text-decoration:underline;}
+.south{
+ border-style:solid;
+ border-width:7px;}
+.west{
+ border-style:solid;
+ border-width:7px;}
+.chinese{
+ border-style:solid;
+ border-width:7px;}
+.snacks{
+ border-style:solid;
+ border-width:7px;}
+.server{
+ border-style:solid;
+ border-width:7px;}
+.form{
+    position:absolute;
+    background-color:rgb(147, 215, 247);
+    border-radius:30px;
+    top:800px;
+    left:200px;
+}
+ 
